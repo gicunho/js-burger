@@ -11,36 +11,45 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-      <div>
-          <div class="col-6 p-0">
-            <!-- Site header -->
-            <header class="bg-yellow p-4">
-                <h1 class="font-weight-bold">Create Your Burger</h1>
-            </header>
-            <!-- /Site header -->
-
-            <!-- Main content -->
-            <main class="p-4">
-                <!-- name your burger -->
-                <h3>Ingredienti</h3> 
-                <section id="ingredients">
-                    
-                </section>
-                <button id="price_generator" class="bg-yellow">Calculate</button>
-            </main>
-            <!-- /Main content -->
-
-            <!-- Site footer -->
-            <footer class="d-flex justify-content-between bg-pink p-4">
-                <h4 class="text-white">Your Price</h4>
-                <div id="price"></div>
-            </footer>
-            <!-- /Site footer -->
-          </div>
-
-          <div class="col-6">
-
-          </div>
+      <div class="">
+            <div class="row">
+                <div id="col_left" class="col p-0">
+                    <!-- Site header -->
+                    <header class="bg-yellow p-4 pl-5 position-relative">
+                        <h1 class="font-weight-bold">Create Your Burger</h1>
+                        <img src="./assets/img/burger-top.png" alt="burger logo">
+                    </header>
+                    <!-- /Site header -->
+        
+                    <!-- Main content -->
+                    <main class="p-4 pl-5 mb-5">
+                        <!-- name your burger -->
+                        <input type="text" name="burger_name" id="burger_name" placeholder="Name Your Burger">
+                        <h3 class="py-3">Ingredients</h3> 
+                        <section id="ingredients" class="d-flex flex-wrap">
+                            
+                        </section>
+                        <div id="discount_coupon" class="my-5">
+                            <label for="coupon">Discount Coupon</label>
+                            <input class="bg-lightyellow ml-4" type="text" name="coupon" id="coupon" placeholder="12354ABCDEF">
+                        </div>
+                        <div class="text-center">
+                            <button id="price_generator" class="bg-yellow text-center">Calculate</button>
+                        </div>
+                    </main>
+                    <!-- /Main content -->
+        
+                    <!-- Site footer -->
+                    <footer class="d-flex justify-content-between align-items-center bg-pink p-4 pl-5">
+                        <h4 class="text-white">Your Price</h4>
+                        <div id="price" class="text-white"></div>
+                    </footer>
+                    <!-- /Site footer -->
+                  </div>
+        
+                  <div id="col_right" class="col bg-lightyellow">
+                  </div>
+            </div>
       </div>
      
     

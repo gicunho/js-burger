@@ -1,3 +1,4 @@
+/* Common classes */
 .bg-yellow {
     background-color: #fdbb40;
 }
@@ -5,3 +6,112 @@
 .bg-pink {
     background-color: #d33359;
 }
+
+.bg-lightyellow{
+    background-color: #fff5e2;
+}
+
+.text-pink {
+    color: #d33359
+}
+
+/* Main rules */
+#col_left{
+    z-index: 1;
+}
+#col_right{
+    z-index: 0;
+}
+
+input[id="burger_name"]{
+    border: none;
+    font-size: 30px;
+}
+input:focus{
+    outline: none;
+}
+
+input[id="coupon"]{
+    border: none;
+    width: 60%;
+} 
+
+header img{
+    width: 200px;
+    position: absolute;
+    top: -40px;
+    right: -60px
+}
+#ingredients > div{
+    width: 50%;
+}
+
+#price_generator{
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+#price{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Checkbox rules */
+.checkbox {
+/*     display: inline-flex;
+    cursor: pointer;
+    position: relative; */
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #d33359;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox .checkmark:after {
+    left: 4px;
+    top: -10px;
+    width: 13px;
+    height: 28px;
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
